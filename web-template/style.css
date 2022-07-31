@@ -1,0 +1,141 @@
+.container {
+    max-width: 800px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 20px;
+}
+
+.task__inner {
+    border-radius: 10px;
+
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #343F4B;
+    color: white;
+}
+
+.item__drag {
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.item__drag:hover {
+    color: white;
+}
+
+.item__drag i {
+    font-size: 24px;
+}
+
+.item__title {
+    margin-right: 20px;
+}
+
+.item__level {
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #F95F62;
+
+    height: 100%;
+    padding: 5px 30px;
+
+    border-radius: 0 10px 10px 0;
+}
+
+*.item__level.purple {
+    background-color: #976DD0;
+}
+
+*.yellow {
+    background-color: #FFBA5C;
+}
+
+*.green {
+    background-color: #77D353;
+}
+
+.item__level span {
+    font-size: 24px;
+}
+
+.subtask__item {
+    width: 100%;
+    position: relative;
+
+    list-style: none;
+    color: white;
+    margin: 20px 0;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #343F4B;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.subtask__item .item__level span {
+    opacity: 0;
+}
+
+
+.task__input {
+    position: fixed;
+    bottom: 10px;
+    width: 800px;
+    margin: 0 auto;
+
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+
+
+.form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text__input {
+    width: 90%;
+}
+
+.task__btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: #343F4B;
+}
+
+.task__btn a {
+    display: inline;
+    text-decoration: none;
+    color: white;
+}
+
+.task__btn a:hover {
+    color: white;
+    text-decoration: none;
+}
